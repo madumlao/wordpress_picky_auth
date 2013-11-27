@@ -202,4 +202,4 @@ class PickyAuthPlugin {
 	}
 }
 
-$picky_users_plugin = new PickyAuthPlugin();
+$picky_auth_plugin = new PickyAuthPlugin();
