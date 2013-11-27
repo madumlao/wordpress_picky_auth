@@ -119,7 +119,7 @@ class PickyAuthPlugin {
 	 * @param string    $regex used to match attribute
 	 * @param string    $match value to extract rom regex
 	 */
-	function get_attr_from_cert($cert, $attr, $regex = NULL, $match = '$1') {
+	function get_attr_from_cert($cert, $attr, $regex = '/(.*)/', $match = '$1') {
 		$attr = preg_replace('/\s+,|,\s+/', ',', $attr);
 		$attr = preg_replace('/\s+$/', '', $attr);
 		$attr = explode(',', $attr);
